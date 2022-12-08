@@ -12,21 +12,21 @@ module.exports = {
   networks: {
     development: {
       host: "127.0.0.1",
-      port: 23889, //Switch to 23888 for local HTTP Server, look at Makefile run-janus
+      port: 24889, //Switch to 24888 for local HTTP Server, look at Makefile run-janus
       network_id: "*",
       gas: 3000000,
       gasPrice: "0x64",
     },
     testing: {
       host: "127.0.0.1",
-      port: 23888,
+      port: 24888,
       network_id: "*",
       gas: 3000000,
       gasPrice: "0x64",
     },
     docker: {
       host: "janus",
-      port: 23889,
+      port: 24889,
       network_id: "*",
       gas: 3000000,
       gasPrice: "0x64",
@@ -37,8 +37,8 @@ module.exports = {
       network_id: "*",
     },
     testnet: {
-      host: "hk1.s.qtum.org",
-      port: 23889,
+      host: "hk1.s.htmlcoin.org",
+      port: 24889,
       network_id: "*",
       from: "0x7926223070547d2d15b2ef5e7383e541c338ffe9",
       gasPrice: "0x64",
@@ -46,7 +46,7 @@ module.exports = {
   },
   compilers: {
     solc: {
-      version: "^0.8.0",
+      version: "0.8.3",
       settings: {
         optimizer: {
           enabled: true,
